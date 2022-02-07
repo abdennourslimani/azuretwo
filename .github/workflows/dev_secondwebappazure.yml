@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - secondwebappazure
+name: Build and deploy Node.js app to Azure Web App - 'secondwebappazure'
 
 on:
   push:
@@ -16,16 +16,17 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
-
-   steps:
+    steps:
       - name: connect to repository to recuperate application 
         uses: actions/checkout@v2
-
+     
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'secondwebappazure'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EF003EE68EC14ECCB52833C29BBEF80A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DF7A5923E1A64CF8B573F78946D18714 }}
           package: .
+
+
