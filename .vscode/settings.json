@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/b755fa7d-82d6-4fa2-b0e8-e26584e1135b/resourceGroups/formationabdennour/providers/Microsoft.Web/sites/abdennourapp",
-    "appService.deploySubpath": "."
-}
