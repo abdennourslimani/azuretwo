@@ -26,7 +26,7 @@ jobs:
         with:
           app-name: 'secondwebappazure'
           slot-name: 'Production'
-          # publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DF7A5923E1A64CF8B573F78946D18714 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DF7A5923E1A64CF8B573F78946D18714 }}
           package: .
 
 
